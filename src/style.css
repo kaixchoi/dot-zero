@@ -41,6 +41,15 @@ a { color: inherit; }
 h1 { max-width: 730px; margin: 0; font: 700 clamp(54px, 7.8vw, 112px)/.89 'Syne', sans-serif; letter-spacing: -.085em; }
 h1 em { color: var(--orange); font-style: normal; }
 .hero-intro { max-width: 430px; margin: 38px 0 34px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.countdown { max-width: 510px; margin-bottom: 30px; }
+.countdown-label { margin-bottom: 12px; color: var(--orange); font-size: 10px; text-transform: uppercase; letter-spacing: .12em; }
+.countdown-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.countdown-unit { display: flex; flex-direction: column; gap: 4px; padding: 12px 12px 11px 0; border-right: 1px solid var(--line); }
+.countdown-unit:not(:first-child) { padding-left: 12px; }
+.countdown-unit:last-child { border-right: 0; }
+.countdown-unit strong { font: 600 24px/1 'Syne', sans-serif; letter-spacing: -.05em; }
+.countdown-unit span { color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }
+.countdown-complete { color: var(--orange); font: 600 20px/1 'Syne', sans-serif; }
 .notify-form-wrap { max-width: 510px; }
 .notify-form { display: flex; border-bottom: 1px solid var(--ink); }
 .notify-form input { min-width: 0; flex: 1; padding: 15px 8px 15px 0; color: var(--ink); background: transparent; border: 0; outline: 0; }

@@ -1,5 +1,6 @@
 <script setup>
 import BrandMark from '../components/BrandMark.vue'
+import CountdownTimer from '../components/CountdownTimer.vue'
 import NotifyForm from '../components/NotifyForm.vue'
 </script>
 
@@ -17,6 +18,7 @@ import NotifyForm from '../components/NotifyForm.vue'
         <p class="hero-intro reveal reveal-delay-3">
           Dot Zero is a new kind of creative studio for ideas that deserve a little more space to become real.
         </p>
+        <CountdownTimer />
         <NotifyForm />
       </div>
 
